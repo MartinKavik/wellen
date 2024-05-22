@@ -44,7 +44,7 @@ impl Debug for Waveform {
 }
 
 impl Waveform {
-    fn new(hierarchy: Hierarchy, source: SignalSource, time_table: TimeTable) -> Self {
+    pub fn new(hierarchy: Hierarchy, source: SignalSource, time_table: TimeTable) -> Self {
         Waveform {
             hierarchy,
             source,
